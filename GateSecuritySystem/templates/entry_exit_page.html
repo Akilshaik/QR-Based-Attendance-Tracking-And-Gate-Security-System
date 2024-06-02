@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/entry_exit.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- Add your logo here -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Profile</a></li>
+                <li><a href="/Qr_image">Qr Code</a></li>
+                <li><a href="#">Entry Exit Time</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="user-card">
+                <h2>Entry Time</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            
+                            <th>Email</th>
+                            <th>Date</th>
+                            <th>Entry Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in user_enter_data %}
+                        <tr>
+                            
+                            <td>{{ data.email }}</td>
+                            <td>{{ data.date }}</td>
+                            <td>{{ data.entry_time }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="user-card">
+                <h2>Exit Time</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            
+                            <th>Email</th>
+                            <th>Date</th>
+                            <th>Exit Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in user_exit_data %}
+                        <tr>
+                            
+                            <td>{{ data.email }}</td>
+                            <td>{{ data.date }}</td>
+                            <td>{{ data.exit_time }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AM security. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

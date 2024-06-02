@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+}
+
+.service p {
+    margin: 0;
+}
+
+.qr-code-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.button {
+    height: 40px;
+    width: auto;
+    margin: 5px;
+    padding: 0 10px;
+    background-color: rgb(51, 48, 48);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background-color: #333;
+}
+
+.button .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: transparent;
+}
+
+.button .icon i {
+    font-size: 20px;
+    color: white; 
+    transition: all 0.3s ease-out;
+}
+
+.button span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #fff;
+}
+
+header {
+    background-color: rgb(51, 48, 48);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #66c2f3;   
+}
+
+.footer-content {
+    background-color: rgb(51, 48, 48);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}

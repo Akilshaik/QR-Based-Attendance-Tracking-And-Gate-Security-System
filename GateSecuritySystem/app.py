@@ -14,7 +14,6 @@ from flask_admin.contrib.sqla import ModelView
 
 
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:9923@localhost/db'
 

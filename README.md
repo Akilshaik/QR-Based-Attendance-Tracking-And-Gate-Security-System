@@ -38,7 +38,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Akilshaik/qr-code-entry-exit-system.git
+    git clone https://github.com/Akilshaik/GateVise.git
     cd qr-code-entry-exit-system
     ```
 

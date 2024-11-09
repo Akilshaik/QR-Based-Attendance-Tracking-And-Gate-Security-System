@@ -1,4 +1,4 @@
-# QR Code Based Entry-Exit System
+# GateVise
 
 ## Overview
 
